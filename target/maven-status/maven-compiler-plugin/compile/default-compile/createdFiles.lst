@@ -1,1 +1,13 @@
+com\angeloabrita\academia\JakartaRestConfiguration.class
+com\angeloabrita\academia\services\ResponsavelLegalService.class
 com\angeloabrita\academia\until\HibernateUtil.class
+com\angeloabrita\academia\model\Aluno.class
+com\angeloabrita\academia\dao\AlunoDAO.class
+com\angeloabrita\academia\services\FichaTreinoService.class
+com\angeloabrita\academia\controller\AlunoBean.class
+com\angeloabrita\academia\resources\JakartaEE11Resource.class
+com\angeloabrita\academia\model\ResponsavelLegal.class
+com\angeloabrita\academia\dao\FichaTreinoDAO.class
+com\angeloabrita\academia\services\AlunoService.class
+com\angeloabrita\academia\model\FichaTreino.class
+com\angeloabrita\academia\dao\ResponsavelLegalDAO.class

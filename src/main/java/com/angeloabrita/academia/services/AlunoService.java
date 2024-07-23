@@ -46,5 +46,6 @@ public class AlunoService {
 
     private void definirPlano(Aluno aluno) {
         // Lógica para definir o plano e a mensalidade do aluno
+        
     }
 }

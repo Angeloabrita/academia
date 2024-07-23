@@ -8,6 +8,21 @@ package com.angeloabrita.academia.services;
  *
  * @author angel
  */
+
+import com.angeloabrita.academia.dao.ResponsavelLegalDAO;
+import com.angeloabrita.academia.model.ResponsavelLegal;
+
+import java.util.List;
+
+
 public class ResponsavelLegalService {
-    
+    private ResponsavelLegalDAO responsavelLegalDAO = new ResponsavelLegalDAO();
+
+    public void salvar(ResponsavelLegal responsavelLegal) {
+        responsavelLegalDAO.salvar(responsavelLegal);
+    }
+
+    public List<ResponsavelLegal> listarTodos() {
+        return responsavelLegalDAO.listarTodos();
+    }
 }
