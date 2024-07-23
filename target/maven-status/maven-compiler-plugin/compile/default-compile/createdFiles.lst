@@ -1,7 +1,1 @@
-com\angeloabrita\academia\JakartaRestConfiguration.class
 com\angeloabrita\academia\until\HibernateUtil.class
-com\angeloabrita\academia\model\Aluno.class
-com\angeloabrita\academia\model\FichaTreino.class
-com\angeloabrita\academia\dao\AlunoDAO.class
-com\angeloabrita\academia\resources\JakartaEE11Resource.class
-com\angeloabrita\academia\model\ResponsavelLegal.class

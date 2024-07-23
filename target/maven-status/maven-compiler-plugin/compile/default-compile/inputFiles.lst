@@ -1,7 +1,10 @@
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\dao\AlunoDAO.java
+C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\dao\FichaTreinoDAO.java
+C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\dao\ResponsavelLegalDAO.java
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\JakartaRestConfiguration.java
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\model\Aluno.java
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\model\FichaTreino.java
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\model\ResponsavelLegal.java
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\resources\JakartaEE11Resource.java
+C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\services\AlunoService.java
 C:\Users\angel\Documents\NetBeansProjects\academia\src\main\java\com\angeloabrita\academia\until\HibernateUtil.java
