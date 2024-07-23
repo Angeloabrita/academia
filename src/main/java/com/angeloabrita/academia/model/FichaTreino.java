@@ -25,4 +25,42 @@ public class FichaTreino {
     private Aluno aluno;
 
     // Getters e Setters
+    
+    public Long getId() {
+        return id;
+    }
+
+   
+
+    public String getExercicio() {
+        return exercicio;
+    }
+
+    public void setExercicio(String exercicio) {
+        this.exercicio = exercicio;
+    }
+
+    public int getRepeticoes() {
+        return repeticoes;
+    }
+
+    public void setRepeticoes(int repeticoes) {
+        this.repeticoes = repeticoes;
+    }
+
+    public double getCarga() {
+        return carga;
+    }
+
+    public void setCarga(double carga) {
+        this.carga = carga;
+    }
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
 }
