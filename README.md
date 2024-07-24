@@ -1,5 +1,5 @@
 # Projeto Go horse Academia
-![Logo](https://github.com/Angeloabrita/resume/blob/master/doc/index.png?raw=true)
+![Logo](https://github.com/Angeloabrita/academia/blob/master/docs/image.png?raw=true)
 
 Este é um projeto de aplicação web empacotado como um arquivo WAR. Ele é construído utilizando Jakarta EE 11 e várias dependências, incluindo PrimeFaces, Hibernate e PostgreSQL. O aplicativo utiliza JDK 17 e o servidor de aplicações WildFly 32.0.1.Final.
 
