@@ -8,6 +8,7 @@ package com.angeloabrita.academia.model;
  *
  * @author angel
  */
+
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -35,9 +36,10 @@ public class Aluno {
     private List<FichaTreino> fichasTreino;
 
     // Getters e Setters
-     public Long getId() {
+    public Long getId() {
         return id;
     }
+
 
   
     public String getNome() {

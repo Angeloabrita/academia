@@ -9,23 +9,24 @@ package com.angeloabrita.academia.controller;
  * @author angel
  */
 
+
 import com.angeloabrita.academia.model.Aluno;
 import com.angeloabrita.academia.services.AlunoService;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.RequestScoped;
-
-
+import jakarta.inject.Inject;
 import java.io.Serializable;
 import java.util.List;
 
-
 @RequestScoped
 public class AlunoBean implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private Aluno aluno = new Aluno();
     private List<Aluno> alunos;
 
-   
+    @Inject
     private AlunoService alunoService;
 
     @PostConstruct

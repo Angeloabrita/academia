@@ -27,11 +27,9 @@ public class AlunoService {
         return alunoDAO.listarTodos();
     }
 
-    private void calcularImc(Aluno aluno) {
+    private String calcularImc(Aluno aluno) {
         double imc = aluno.getPeso() / (aluno.getAltura() * aluno.getAltura());
-        
-//        aluno.setImc(imc);
-//        aluno.setClassificacaoImc(definirClassificacaoImc(imc));
+        return definirClassificacaoImc(imc);
     }
 
     private String definirClassificacaoImc(double imc) {

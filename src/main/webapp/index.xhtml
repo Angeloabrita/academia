@@ -1,22 +1,92 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:jsf="http://xmlns.jcp.org/jsf"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="jakarta.faces.core">
+<h:head>
+    <title>Lista de Alunos</title>
+    <style>
+        body {
+            background-image: url('bg1.jpeg'); /* Caminho para a imagem de fundo */
+            background-size: cover; /* Garante que a imagem cubra toda a página */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-position: center center; /* Centraliza a imagem */
+        }
+        .form-panel {
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</h:head>
+<h:body>
+    Bem vindo ao GO Horse academy
+    <h:form id="formListaAlunos" class="form-panel">
+        <p:dataTable id="alunoTable" value="#{alunoBean.alunos}" var="aluno" paginator="true" rows="10" 
+                     filteredValue="#{alunoBean.filteredAlunos}">
+            <p:column headerText="Nome" filterBy="#{aluno.nome}" filterMatchMode="contains">
+                <f:facet name="filter">
+                    <p:inputText onkeyup="PF('alunoTable').filter()" />
+                </f:facet>
+                <h:outputText value="#{aluno.nome}" />
+            </p:column>
+            <p:column headerText="Classificação IMC" filterBy="#{aluno.classificacaoImc}" filterMatchMode="contains">
+                <f:facet name="filter">
+                    <p:inputText onkeyup="PF('alunoTable').filter()" />
+                </f:facet>
+                <h:outputText value="#{aluno.classificacaoImc}" />
+            </p:column>
+            <p:column headerText="Telefone" filterBy="#{aluno.telefone}" filterMatchMode="contains">
+                <f:facet name="filter">
+                    <p:inputText onkeyup="PF('alunoTable').filter()" />
+                </f:facet>
+                <h:outputText value="#{aluno.telefone}" />
+            </p:column>
+            <p:column headerText="Email" filterBy="#{aluno.email}" filterMatchMode="contains">
+                <f:facet name="filter">
+                    <p:inputText onkeyup="PF('alunoTable').filter()" />
+                </f:facet>
+                <h:outputText value="#{aluno.email}" />
+            </p:column>
+        </p:dataTable>
+        <p:commandButton value="Novo" action="#{alunoBean.novo}" update=":formCadastroAluno" oncomplete="PF('dlgCadastroAluno').show()" />
+    </h:form>
 
-    <f:view contentType="text/html;charset=UTF-8" encoding="UTF-8">
-        <h:head>
+    <p:dialog header="Cadastro de Aluno" widgetVar="dlgCadastroAluno" modal="true" resizable="false">
+        <h:form id="formCadastroAluno" class="form-panel">
+            <h:panelGrid columns="2">
+                <p:outputLabel for="nome" value="Nome:" />
+                <p:inputText id="nome" value="#{alunoBean.aluno.nome}" required="true" />
 
-        </h:head>
-        
-        <h:body>
-            <p:spinner />
+                <p:outputLabel for="dataNascimento" value="Data de Nascimento:" />
+                <p:datePicker id="dataNascimento" value="#{alunoBean.aluno.dataNascimento}" required="true" 
+                             onchange="PF('dlgCadastroAluno').hide(); PF('dlgCadastroAluno').show();" />
 
-            <p:textEditor id="editor" value="#{bean.value}" secure="false"/>
- 
-        </h:body>
-    </f:view>
+                <p:outputLabel for="peso" value="Peso:" />
+                <p:inputText id="peso" value="#{alunoBean.aluno.peso}" required="true" />
 
+                <p:outputLabel for="altura" value="Altura:" />
+                <p:inputText id="altura" value="#{alunoBean.aluno.altura}" required="true" />
+
+                <p:outputLabel for="imc" value="IMC:" />
+                <h:outputText id="imc" value="#{alunoBean.aluno.imc}" />
+
+                <p:outputLabel for="classificacaoImc" value="Classificação IMC:" />
+                <h:outputText id="classificacaoImc" value="#{alunoBean.aluno.classificacaoImc}" />
+
+                <p:outputLabel for="telefone" value="Telefone:" />
+                <p:inputText id="telefone" value="#{alunoBean.aluno.telefone}" required="true" />
+
+                <p:outputLabel for="email" value="Email:" />
+                <p:inputText id="email" value="#{alunoBean.aluno.email}" required="true" />
+
+                <p:outputLabel for="responsavelLegal" value="Responsável Legal:" rendered="#{!alunoBean.aluno.maiorDeIdade}" />
+                <p:inputText id="responsavelLegal" value="#{alunoBean.aluno.responsavelLegal}" rendered="#{!alunoBean.aluno.maiorDeIdade}" />
+
+                <p:outputLabel for="grauParentesco" value="Grau de Parentesco:" rendered="#{!alunoBean.aluno.maiorDeIdade}" />
+                <p:inputText id="grauParentesco" value="#{alunoBean.aluno.grauParentesco}" rendered="#{!alunoBean.aluno.maiorDeIdade}" />
+            </h:panelGrid>
+            <p:commandButton value="Salvar" action="#{alunoBean.salvar}" update=":formCadastroAluno" oncomplete="PF('dlgCadastroAluno').hide()" />
+        </h:form>
+    </p:dialog>
+</h:body>
 </html>
