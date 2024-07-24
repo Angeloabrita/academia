@@ -18,16 +18,22 @@ public class AlunoService {
     private AlunoDAO alunoDAO = new AlunoDAO();
 
     public void salvar(Aluno aluno) {
-        calcularImc(aluno);
-        definirPlano(aluno);
+        
         alunoDAO.salvar(aluno);
+        //calcularImc(aluno);
+        //definirPlano(aluno);
     }
 
     public List<Aluno> listarTodos() {
         return alunoDAO.listarTodos();
     }
+    
+    //verifica o retorno da lista #bug exceptionNull
+    public boolean isListaDeAlunos(List<?> lista) {
+        return lista != null && !lista.isEmpty() && lista.get(0) instanceof Aluno;
+    }
 
-    private String calcularImc(Aluno aluno) {
+    public String calcularImc(Aluno aluno) {
         double imc = aluno.getPeso() / (aluno.getAltura() * aluno.getAltura());
         return definirClassificacaoImc(imc);
     }

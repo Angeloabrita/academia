@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Lista de Alunos</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:dataTable value="#{alunoBean.alunos}" var="aluno">
+            <p:column headerText="Nome">
+                <h:outputText value="#{aluno.nome}" />
+            </p:column>
+            <p:column headerText="IMC">
+                <h:outputText value="#{aluno.classificacaoImc}" />
+            </p:column>
+            <p:column headerText="Telefone">
+                <h:outputText value="#{aluno.telefone}" />
+            </p:column>
+            <p:column headerText="Email">
+                <h:outputText value="#{aluno.email}" />
+            </p:column>
+        </p:dataTable>
+        <p:commandButton value="Novo" action="#{alunoBean.novo}" />
+    </h:form>
+</h:body>
+</html>

@@ -12,8 +12,11 @@ package com.angeloabrita.academia.model;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
+import jakarta.persistence.Table;
+
 
 @Entity
+@Table(name = "aluno")
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,6 +30,8 @@ public class Aluno {
     private double peso;
     private double altura;
     private int frequenciaSemanal;
+    
+    private String classificacaoImc;
 
     @ManyToOne
     @JoinColumn(name = "responsavel_id", foreignKey = @ForeignKey(name = "fk_responsavel"))
@@ -130,4 +135,11 @@ public class Aluno {
         this.fichasTreino = fichasTreino;
     }
     
+     public String getClassificacaoImc() {
+        return classificacaoImc;
+    }
+
+    public void setClassificacaoImc(String classificacaoImc) {
+        this.classificacaoImc = classificacaoImc;
+    }
 }

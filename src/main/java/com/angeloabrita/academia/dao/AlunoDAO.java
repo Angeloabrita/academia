@@ -42,6 +42,7 @@ public class AlunoDAO {
             System.out.println("Lista de alunos: " + alunos);  // Adicionando log
             return alunos;
         } catch (Exception e) {
+            System.out.println("Lista de alunos ERRO: " + e);  // Adicionando log
             e.printStackTrace();
             return null;
         }

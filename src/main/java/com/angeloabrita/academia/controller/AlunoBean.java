@@ -16,10 +16,12 @@ import com.angeloabrita.academia.services.AlunoService;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import java.io.Serializable;
 import java.util.List;
 
 @RequestScoped
+@Named
 public class AlunoBean implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -32,7 +34,14 @@ public class AlunoBean implements Serializable {
     @PostConstruct
     public void init() {
         alunos = alunoService.listarTodos();
+        System.out.println("Alunos no controller: " + alunos);
+        
+        // Calcula a classificação IMC para cada aluno
+        alunos.forEach(aluno -> aluno.setClassificacaoImc(alunoService.calcularImc(aluno)));
+        
     }
+    
+  
 
     public void salvar() {
         alunoService.salvar(aluno);
@@ -40,6 +49,7 @@ public class AlunoBean implements Serializable {
         alunos = alunoService.listarTodos();
     }
 
+  
     // Getters e Setters
     public Aluno getAluno() {
         return aluno;
