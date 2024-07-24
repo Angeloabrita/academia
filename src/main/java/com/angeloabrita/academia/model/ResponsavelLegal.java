@@ -9,7 +9,7 @@ package com.angeloabrita.academia.model;
  * @author angel
  */
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

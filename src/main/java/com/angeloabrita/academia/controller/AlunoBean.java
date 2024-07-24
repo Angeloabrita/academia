@@ -14,18 +14,18 @@ import com.angeloabrita.academia.services.AlunoService;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.RequestScoped;
-import jakarta.inject.Inject;
-import jakarta.inject.Named;
+
+
 import java.io.Serializable;
 import java.util.List;
 
-@Named
+
 @RequestScoped
 public class AlunoBean implements Serializable {
     private Aluno aluno = new Aluno();
     private List<Aluno> alunos;
 
-    @Inject
+   
     private AlunoService alunoService;
 
     @PostConstruct
