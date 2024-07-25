@@ -41,7 +41,6 @@ public class AlunoBean implements Serializable {
         
     }
     
-  
 
     public void salvar() {
         alunoService.salvar(aluno);
@@ -60,6 +59,9 @@ public class AlunoBean implements Serializable {
     }
 
     public List<Aluno> getAlunos() {
+        
+        
+        
         return alunos;
     }
 

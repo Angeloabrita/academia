@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AlunoDAOTest" time="4.132" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AlunoDAOTest" time="4.552" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="netbeans.deploy" value="true"/>
     <property name="java.specification.version" value="17"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\angel\AppData\Local\Temp\surefire2811005690052588843\surefirebooter-20240724181225830_3.jar C:\Users\angel\AppData\Local\Temp\surefire2811005690052588843 2024-07-24T18-12-25_569-jvmRun1 surefire-20240724181225830_1tmp surefire_0-20240724181225830_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\angel\AppData\Local\Temp\surefire17344729424044566567\surefirebooter-20240725003449389_3.jar C:\Users\angel\AppData\Local\Temp\surefire17344729424044566567 2024-07-25T00-34-49_141-jvmRun1 surefire-20240725003449389_1tmp surefire_0-20240725003449389_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="exec.vmArgs" value=""/>
     <property name="surefire.test.class.path" value="C:\Users\angel\Documents\NetBeansProjects\academia\target\test-classes;C:\Users\angel\Documents\NetBeansProjects\academia\target\classes;C:\Users\angel\.m2\repository\jakarta\platform\jakarta.jakartaee-api\11.0.0-M1\jakarta.jakartaee-api-11.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\platform\jakarta.jakartaee-web-api\11.0.0-M1\jakarta.jakartaee-web-api-11.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0-M1\jakarta.servlet-api-6.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\servlet\jsp\jakarta.servlet.jsp-api\4.0.0-M1\jakarta.servlet.jsp-api-4.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\data\jakarta-data-api\1.0.0-M1\jakarta-data-api-1.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-el-api\4.1.0-M1\jakarta.enterprise.cdi-el-api-4.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\el\jakarta.el-api\6.0.0-M1\jakarta.el-api-6.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\3.0.0\jakarta.servlet.jsp.jstl-api-3.0.0.jar;C:\Users\angel\.m2\repository\jakarta\websocket\jakarta.websocket-api\2.2.0-M1\jakarta.websocket-api-2.2.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\websocket\jakarta.websocket-client-api\2.2.0-M1\jakarta.websocket-client-api-2.2.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\ejb\jakarta.ejb-api\4.0.1\jakarta.ejb-api-4.0.1.jar;C:\Users\angel\.m2\repository\jakarta\validation\jakarta.validation-api\3.1.0-M1\jakarta.validation-api-3.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\authentication\jakarta.authentication-api\3.1.0-M1\jakarta.authentication-api-3.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\security\enterprise\jakarta.security.enterprise-api\4.0.0-M1\jakarta.security.enterprise-api-4.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\enterprise\concurrent\jakarta.enterprise.concurrent-api\3.1.0-M1\jakarta.enterprise.concurrent-api-3.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\platform\jakarta.jakartaee-core-api\11.0.0-M1\jakarta.jakartaee-core-api-11.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\angel\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0-M1\jakarta.annotation-api-3.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\2.2.0-M1\jakarta.interceptor-api-2.2.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\4.1.0-M1\jakarta.enterprise.cdi-api-4.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\enterprise\jakarta.enterprise.lang-model\4.1.0-M1\jakarta.enterprise.lang-model-4.1.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\jms\jakarta.jms-api\3.1.0\jakarta.jms-api-3.1.0.jar;C:\Users\angel\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\angel\.m2\repository\jakarta\mail\jakarta.mail-api\2.1.2\jakarta.mail-api-2.1.2.jar;C:\Users\angel\.m2\repository\jakarta\resource\jakarta.resource-api\2.1.0\jakarta.resource-api-2.1.0.jar;C:\Users\angel\.m2\repository\jakarta\authorization\jakarta.authorization-api\3.0.0-M1\jakarta.authorization-api-3.0.0-M1.jar;C:\Users\angel\.m2\repository\jakarta\batch\jakarta.batch-api\2.1.1\jakarta.batch-api-2.1.1.jar;C:\Users\angel\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\angel\.m2\repository\jakarta\faces\jakarta.faces-api\4.1.0\jakarta.faces-api-4.1.0.jar;C:\Users\angel\.m2\repository\org\primefaces\primefaces\14.0.0\primefaces-14.0.0-jakarta.jar;C:\Users\angel\.m2\repository\org\eclipse\yasson\3.0.2\yasson-3.0.2.jar;C:\Users\angel\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\3.0.0\jakarta.json.bind-api-3.0.0.jar;C:\Users\angel\.m2\repository\jakarta\json\jakarta.json-api\2.1.0\jakarta.json-api-2.1.0.jar;C:\Users\angel\.m2\repository\org\eclipse\parsson\parsson\1.1.0\parsson-1.1.0.jar;C:\Users\angel\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\angel\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\angel\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\angel\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\angel\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\angel\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\angel\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\angel\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\angel\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\angel\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\angel\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\angel\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\angel\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\angel\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\angel\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\angel\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\angel\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\angel\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\angel\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\angel\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\angel\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\angel\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
@@ -33,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\angel\AppData\Local\Temp\surefire2811005690052588843\surefirebooter-20240724181225830_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\angel\AppData\Local\Temp\surefire17344729424044566567\surefirebooter-20240725003449389_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
@@ -60,38 +60,38 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testSalvarAluno" classname="AlunoDAOTest" time="4.032">
+  <testcase name="testSalvarAluno" classname="AlunoDAOTest" time="4.426">
     <system-out><![CDATA[Hibernate: select a1_0.id,a1_0.altura,a1_0.cep,a1_0.classificacaoImc,a1_0.dataNascimento,a1_0.email,a1_0.foneCelular,a1_0.frequenciaSemanal,a1_0.logradouro,a1_0.nome,a1_0.peso,a1_0.responsavel_id from aluno a1_0 where a1_0.nome=?
 ]]></system-out>
-    <system-err><![CDATA[jul. 24, 2024 6:12:26 PM org.hibernate.Version logVersion
+    <system-err><![CDATA[jul. 25, 2024 12:34:50 AM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate ORM core version 6.5.2.Final
-jul. 24, 2024 6:12:27 PM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+jul. 25, 2024 12:34:50 AM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
 INFO: HHH000026: Second-level cache disabled
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using built-in connection pool (not intended for production use)
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/postgres]
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=postgres}
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
 INFO: HHH10001115: Connection pool size: 20 (min=1)
-jul. 24, 2024 6:12:27 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+jul. 25, 2024 12:34:51 AM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
 WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-jul. 24, 2024 6:12:27 PM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resolveBeanContainer
+jul. 25, 2024 12:34:51 AM org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator resolveBeanContainer
 INFO: HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-jul. 24, 2024 6:12:29 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+jul. 25, 2024 12:34:53 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-jul. 24, 2024 6:12:29 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@53016b11] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+jul. 25, 2024 12:34:53 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@307cf964] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 ]]></system-err>
   </testcase>
-  <testcase name="testListarTodos" classname="AlunoDAOTest" time="0.01">
+  <testcase name="testListarTodos" classname="AlunoDAOTest" time="0.035">
     <system-out><![CDATA[Hibernate: select a1_0.id,a1_0.altura,a1_0.cep,a1_0.classificacaoImc,a1_0.dataNascimento,a1_0.email,a1_0.foneCelular,a1_0.frequenciaSemanal,a1_0.logradouro,a1_0.nome,a1_0.peso,a1_0.responsavel_id from aluno a1_0
-Lista de alunos: [com.angeloabrita.academia.model.Aluno@4a890fdd, com.angeloabrita.academia.model.Aluno@3ca278bc, com.angeloabrita.academia.model.Aluno@2acb1264, com.angeloabrita.academia.model.Aluno@1f68e4e8, com.angeloabrita.academia.model.Aluno@351ede23, com.angeloabrita.academia.model.Aluno@5df7a065, com.angeloabrita.academia.model.Aluno@7c69e1e1, com.angeloabrita.academia.model.Aluno@1bc6c20d, com.angeloabrita.academia.model.Aluno@7a730479]
+Lista de alunos: [com.angeloabrita.academia.model.Aluno@2152fde5, com.angeloabrita.academia.model.Aluno@1f1fbc9f, com.angeloabrita.academia.model.Aluno@50785f86, com.angeloabrita.academia.model.Aluno@1e258d3b, com.angeloabrita.academia.model.Aluno@39f93225, com.angeloabrita.academia.model.Aluno@164dea80]
 ]]></system-out>
   </testcase>
 </testsuite>

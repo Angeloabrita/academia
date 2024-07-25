@@ -13,51 +13,51 @@
         }
         .form-panel {
             background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
-            padding: 20px;
+            padding: 10em;
             border-radius: 10px;
         }
     </style>
+    
+    <script type="text/javascript">
+function filterTable() {
+if (PF('alunoTableWidget')) {
+PF('alunoTableWidget').filter();
+}
+}
+</script>
 </h:head>
 <h:body>
- <h:form id="formListaAlunos" class="form-panel">
-    
-     <p:dataTable id="alunoTable" value="#{alunoBean.alunos}" var="aluno" paginator="true" rows="10" 
-                 filteredValue="#{alunoBean.getAlunos}">
-        <p:column headerText="Nome" filterBy="#{aluno.nome}" filterMatchMode="contains">
-            <f:facet name="filter">
-                <p:inputText onkeyup="PF('alunoTable').filter()" />
-            </f:facet>
-            <h:outputText value="#{aluno.nome}" />
-        </p:column>
-        
-       
-        
-        <p:column headerText="Classificação IMC" filterBy="#{aluno.classificacaoImc}" filterMatchMode="contains">
-            <f:facet name="filter">
-                <p:inputText onkeyup="PF('alunoTable').filter()" />
-            </f:facet>
-            <h:outputText value="#{aluno.classificacaoImc}" />
-        </p:column>
-         
-         
-        <p:column headerText="Telefone" filterBy="#{aluno.foneCelular}" filterMatchMode="contains">
-            <f:facet name="filter">
-                <p:inputText onkeyup="PF('alunoTable').filter()" />
-            </f:facet>
-            <h:outputText value="#{aluno.foneCelular}" />
-        </p:column>
-         
-         
-        <p:column headerText="Email" filterBy="#{aluno.email}" filterMatchMode="contains">
-            <f:facet name="filter">
-                <p:inputText onkeyup="PF('alunoTable').filter()" />
-            </f:facet>
-            <h:outputText value="#{aluno.email}" />
-        </p:column>
-         
-         
-    </p:dataTable>
-    <p:commandButton value="Novo" action="#{alunoBean.salvar}" update=":formCadastroAluno" oncomplete="PF('dlgCadastroAluno').show()" />
+ 
+<h:form id="formListaAlunos" class="form-panel">
+
+<p:dataTable id="alunoTable" value="#{alunoBean.alunos}" var="aluno" paginator="true" rows="4"
+widgetVar="alunoTableWidget" filteredValue="#{alunoBean.alunos}">
+<p:column headerText="Nome" filterBy="#{aluno.nome}" filterMatchMode="contains">
+<f:facet name="filter">
+<p:inputText onkeyup="filterTable()" />
+</f:facet>
+<h:outputText value="#{aluno.nome}" />
+</p:column>
+<p:column headerText="Classificação IMC" filterBy="#{aluno.classificacaoImc}" filterMatchMode="contains">
+<f:facet name="filter">
+<p:inputText onkeyup="filterTable()" />
+</f:facet>
+<h:outputText value="#{aluno.classificacaoImc}" />
+</p:column>
+<p:column headerText="Telefone" filterBy="#{aluno.foneCelular}" filterMatchMode="contains">
+<f:facet name="filter">
+<p:inputText onkeyup="filterTable()" />
+</f:facet>
+<h:outputText value="#{aluno.foneCelular}" />
+</p:column>
+<p:column headerText="Email" filterBy="#{aluno.email}" filterMatchMode="contains">
+<f:facet name="filter">
+<p:inputText onkeyup="filterTable()" />
+</f:facet>
+<h:outputText value="#{aluno.email}" />
+</p:column>
+</p:dataTable>
+<p:commandButton value="Novo" action="#{alunoBean.salvar}" update=":formCadastroAluno" oncomplete="PF('dlgCadastroAluno').show()" />
 </h:form>
 
 
@@ -90,7 +90,11 @@
                 <p:outputLabel for="email" value="Email:" />
                 <p:inputText id="email" value="#{alunoBean.aluno.email}" required="true" />
 
-               
+                <p:outputLabel for="responsavelLegal" value="Responsável Legal:"  />
+                <p:inputText id="responsavelLegal" value="#{alunoBean.aluno.responsavelLegal}"  />
+
+                <p:outputLabel for="grauParentesco" value="Grau de Parentesco:"  />
+                <p:inputText id="grauParentesco" value="#{alunoBean.aluno.responsavelLegal}" />
             </h:panelGrid>
             <p:commandButton value="Salvar" action="#{alunoBean.salvar}" update=":formCadastroAluno" oncomplete="PF('dlgCadastroAluno').hide()" />
         </h:form>
