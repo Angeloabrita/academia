@@ -48,7 +48,7 @@ public class AlunoService {
         else return "Obesidade grau III";
     }
 
-    private void definirPlano(Aluno aluno) {
+    private void definirPlano(Aluno aluno) {       
         // Lógica para definir o plano e a mensalidade do aluno
         
     }
